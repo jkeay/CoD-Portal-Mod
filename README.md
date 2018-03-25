@@ -6,7 +6,7 @@ Here you will find the source and issue tracker for the **Official Call of Duty:
 
 Portal is a mod written for the popular FPS [Call of Duty](https://www.callofduty.com/). It is written in GSC and CSC as that is the scripting language for Call of Duty.
 
-Unfortunatly since this is a **Mod**, this is only available on the PC versions of the game.
+Unfortunately since this is a **Mod**, this is only available on the PC versions of the game.
 
 It implements features from the popular puzzle games [Portal](http://store.steampowered.com/app/400/Portal/) and [Portal 2](http://store.steampowered.com/app/620/Portal_2/) developed by [Valve](http://www.valvesoftware.com/)
 
@@ -14,14 +14,14 @@ The mod was created and is still currently maintained by the user going by the n
 
 ## Why are you posting the Source Code?
 
-The reason the source code is being publicy avaliable is because this way others modders can pitch in and contribute towards the mod.
+The reason the source code is being publicly available is because this way other modders can pitch in and contribute towards the mod.
 
 [Read more here](https://github.com/WARDOGSK93/CoD-Portal-Mod#contributing)
 
 ## Official Links
 
-* Steam Workshop (Mod): Unreleased of of now
-* Steam Workshop (Demo Map): Unreleased of of now
+* Steam Workshop (Mod): Unreleased as of now
+* Steam Workshop (Demo Map): Unreleased as of now
 
 ## Issues
 
@@ -31,7 +31,7 @@ If a bug / issue is already listed, please do not repost the it.
 
 ## Contributing
 
-Anyone is allowed to contribute towards this mod, please be sure to adhear to the [GNU license](https://github.com/WARDOGSK93/CoD-Portal-Mod/blob/T7/LICENSE)
+Anyone is allowed to contribute towards this mod, please be sure to adhere to the [GNU license](https://github.com/WARDOGSK93/CoD-Portal-Mod/blob/T7/LICENSE)
 
 Please ensure that the changes you wish to make do not already exist in a existing pull request or the mod itself.
 
