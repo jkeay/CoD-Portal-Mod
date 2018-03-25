@@ -15,3 +15,4 @@ scriptparsetree,scripts\shared\portal\portal_shared.csc
 
 // Server Scripts
 scriptparsetree,scripts\shared\portal\portal_shared.gsc
+scriptparsetree,scripts\shared\portal\portal_weapon.gsc

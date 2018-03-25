@@ -6,6 +6,7 @@
 	THE BELOW INCLUDES FOR PORTAL WOULD BE ADDED TO YOUR MOD / MAP SCRIPT FILE
 */
 #using scripts\shared\portal\portal_shared; // Core
+#using scripts\shared\portal\portal_weapon; // Core
 #using scripts\mp\portal\_portal; // MP
 
 #using scripts\codescripts\struct;

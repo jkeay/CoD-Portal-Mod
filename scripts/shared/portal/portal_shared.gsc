@@ -11,6 +11,8 @@
 #insert scripts\shared\shared.gsh;
 #insert scripts\shared\version.gsh;
 
+#using scripts\shared\portal\portal_weapon;
+
 #namespace portal_core;
 
 REGISTER_SYSTEM("portal_core", &__init__, undefined)
