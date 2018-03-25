@@ -35,7 +35,7 @@ Anyone is allowed to contribute towards this mod, please be sure to adhear to th
 
 Please ensure that the changes you wish to make do not already exist in a existing pull request or the mod itself.
 
-### How yo contribute towards this mod:
+### How to contribute towards this mod:
 * Fork the repository
 * Clone forked repository (Be sure to clone correct branch for correct game version)
 * Modify and Commit changes
