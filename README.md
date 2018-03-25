@@ -2,7 +2,6 @@
 
 Here you will find the source and issue tracker for the **Official Call of Duty: Portal Mod**.
 
-
 ## What is Portal?
 
 Portal is a mod written for the popular FPS [Call of Duty](https://www.callofduty.com/). It is written in GSC and CSC as that is the scripting language for Call of Duty.
@@ -43,5 +42,5 @@ Please ensure that the changes you wish to make do not already exist in a existi
 * Submit pull request, stating what has been changed and how it will benefit the mod
 
 ### Contributors
-**[TxM] WARDOG** - _Mod Owner, Scripter_
-**RudySPG** - _Mod Co-Owner, Mapper_
+* **[TxM] WARDOG** - _Mod Owner, Scripter_
+* **RudySPG** - _Mod Co-Owner, Mapper_
