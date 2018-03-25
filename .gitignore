@@ -4,6 +4,7 @@
 *.zone
 *.csv
 *.deps
+*.gdb
 # Include specific zone files
 !zone_source/core_mod.zone
 !zone_source/cp_mod.zone
