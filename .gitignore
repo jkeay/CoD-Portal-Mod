@@ -4,3 +4,8 @@
 *.zone
 *.csv
 *.deps
+# Include specific zone files
+!zone_source/core_mod.zone
+!zone_source/cp_mod.zone
+!zone_source/mp_mod.zone
+!zone_source/zm_mod.zone
