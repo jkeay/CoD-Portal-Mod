@@ -1,0 +1,3 @@
+This folder contains all the core required scripts for the mod to function.
+
+Shared across both Zombiemode and Multiplayer

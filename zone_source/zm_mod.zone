@@ -3,6 +3,16 @@
 
 #include "zm_mod.class"
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
 rawfile,dummy.cfg
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// REQUIRED DO NOT MODIFY OR REMOVE ANYTHING ABOVE THIS LINE
+
+// Client Scripts
+scriptparsetree,scripts\zm\portal\_portal.csc
+
+// Server Scripts
+scriptparsetree,scripts\zm\portal\_portal.gsc
+
+// ZM Overrides, DO NOT MODIFY
+scriptparsetree,scripts\zm\_load.csc
+scriptparsetree,scripts\zm\_load.csc

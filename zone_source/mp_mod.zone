@@ -3,6 +3,16 @@
 
 #include "mp_mod.class"
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
 rawfile,dummy.cfg
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// REQUIRED DO NOT MODIFY OR REMOVE ANYTHING ABOVE THIS LINE
+
+// Client Scripts
+scriptparsetree,scripts\mp\portal\_portal.csc
+
+// Server Scripts
+scriptparsetree,scripts\mp\portal\_portal.gsc
+
+// MP Overrides, DO NOT MODIFY
+scriptparsetree,scripts\mp\_load.csc
+scriptparsetree,scripts\mp\_load.csc
