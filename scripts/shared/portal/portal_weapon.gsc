@@ -1,11 +1,10 @@
 #using scripts\codescripts\struct;
 
 #using scripts\shared\array_shared;
-#using scripts\shared\callbacks_shared;
 #using scripts\shared\clientfield_shared;
+#using scripts\shared\callbacks_shared;
 #using scripts\shared\exploder_shared;
 #using scripts\shared\flag_shared;
-#using scripts\shared\system_shared;
 #using scripts\shared\util_shared;
 #using scripts\shared\visionset_mgr_shared;
 
@@ -14,21 +13,11 @@
 
 #using scripts\shared\portal\portal_shared;
 
+#insert scripts\shared\portal\portal_shared.gsh;
+
 #namespace portal_weapon;
 
 #define PORTAL_FIRED_EVENT_NAME #"on_portal_fired"
-
-// TODO: Move to common GSH
-#define PORTAL_TYPE_LEFT 0
-#define PORTAL_TYPE_RIGHT 1
-
-REGISTER_SYSTEM("portal_weapon", &__init__, array("portal_core"))
-
-function __init__()
-{
-	callback::on_connect(&onPlayerConnect);
-	callback::on_disconnect(&onPlayerDisconnect);
-}
 
 // Events
 function onPlayerConnect()

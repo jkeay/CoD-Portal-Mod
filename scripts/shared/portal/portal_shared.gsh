@@ -1,0 +1,4 @@
+#define PORTAL_CLIENT_SYSTEM_NAME "portal"
+
+#define PORTAL_TYPE_LEFT 0
+#define PORTAL_TYPE_RIGHT 1
