@@ -15,4 +15,4 @@ scriptparsetree,scripts\zm\portal\_portal.gsc
 
 // ZM Overrides, DO NOT MODIFY
 scriptparsetree,scripts\zm\_load.csc
-scriptparsetree,scripts\zm\_load.csc
+scriptparsetree,scripts\zm\_load.gsc

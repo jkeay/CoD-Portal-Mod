@@ -61,7 +61,7 @@
 
 //System registration
 #using scripts\mp\_arena;
-#using scripts\mp\_bb;
+// #using scripts\mp\_bb; // PORTAL CHANGE : COMMENTED OUT SINCE THIS SCRIPT DOES NOT EXIST IN MODTOOLS
 #using scripts\shared\_burnplayer;
 #using scripts\mp\_callbacks;
 #using scripts\mp\_devgui;

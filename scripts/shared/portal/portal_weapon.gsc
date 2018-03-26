@@ -35,7 +35,7 @@ function onPlayerDisconnect()
 	// TODO: Remove any existing portals for this player
 }
 
-function onPlayerFiredPortal_Pre(portal_type)
+function private onPlayerFiredPortal_Pre(portal_type)
 {
 	self._portal_weapon_fire_state = portal_type;
 	self notify("portal_fired_pre", portal_type);
@@ -46,7 +46,7 @@ function onPlayerFiredPortal_Pre(portal_type)
 	IPrintLnBold("Fired Portal: " + portal_type);
 }
 
-function onPlayerFiredPortal_Post(portal_type)
+function private onPlayerFiredPortal_Post(portal_type)
 {
 	waittillframeend;
 	self notify("portal_fired_post", portal_type);
@@ -103,7 +103,7 @@ function private watchPortalFiredRight()
 
 // Util
 // TODO: Move to common utility script
-function fire_event(core_event_pre, core_event_post, event_name, arg1, arg2, arg3, arg4, arg5, arg6)
+function private fire_event(core_event_pre, core_event_post, event_name, arg1, arg2, arg3, arg4, arg5, arg6)
 {
 	// Ensure the core logic executes first
 	util::single_func(self, core_event_pre, arg1, arg2, arg3, arg4, arg5, arg6);

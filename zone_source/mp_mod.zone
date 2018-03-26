@@ -15,4 +15,4 @@ scriptparsetree,scripts\mp\portal\_portal.gsc
 
 // MP Overrides, DO NOT MODIFY
 scriptparsetree,scripts\mp\_load.csc
-scriptparsetree,scripts\mp\_load.csc
+scriptparsetree,scripts\mp\_load.gsc
