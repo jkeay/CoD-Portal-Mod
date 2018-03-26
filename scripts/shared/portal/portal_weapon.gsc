@@ -22,12 +22,7 @@
 // Events
 function onPlayerConnect()
 {
-	self._portal_weapon_fire_state = undefined;
-
 	self thread watchPortalFired();
-
-	// Special logic for firing right portal
-	self thread watchPortalFiredRight();
 }
 
 function onPlayerDisconnect()
@@ -37,7 +32,6 @@ function onPlayerDisconnect()
 
 function private onPlayerFiredPortal_Pre(portal_type)
 {
-	self._portal_weapon_fire_state = portal_type;
 	self notify("portal_fired_pre", portal_type);
 	self notify("portal_fired_pre_" + portal_type);
 	self notify("portal_fired", portal_type);
@@ -51,7 +45,6 @@ function private onPlayerFiredPortal_Post(portal_type)
 	waittillframeend;
 	self notify("portal_fired_post", portal_type);
 	self notify("portal_fired_post_" + portal_type);
-	self._portal_weapon_fire_state = undefined;
 }
 
 // Logic
@@ -61,43 +54,17 @@ function private watchPortalFired()
 
 	for(;;)
 	{
-		self waittill("weapon_fired");
+		WAIT_SERVER_FRAME
 
-		IPrintLnBold("Fire Left -> Attempt");
+		if(self AttackButtonPressed())
+			self fire_event(&onPlayerFiredPortal_Pre, &onPlayerFiredPortal_Post, PORTAL_FIRED_EVENT_NAME, PORTAL_TYPE_LEFT);
+		else if(self AdsButtonPressed())
+			self fire_event(&onPlayerFiredPortal_Pre, &onPlayerFiredPortal_Post, PORTAL_FIRED_EVENT_NAME, PORTAL_TYPE_RIGHT);
 
-		if(!isdefined(self._portal_weapon_fire_state) || self._portal_weapon_fire_state != PORTAL_TYPE_LEFT)
-			continue;
-
-		IPrintLnBold("Fire Left -> Success");
-
-		self fire_event(&onPlayerFiredPortal_Pre, &onPlayerFiredPortal_Post, PORTAL_FIRED_EVENT_NAME, PORTAL_TYPE_LEFT);
-	}
-}
-
-function private watchPortalFiredRight()
-{
-	self endon("disconnect");
-
-	for(;;)
-	{
-		do
+		while(self AttackButtonPressed() || self AdsButtonPressed())
 		{
 			WAIT_SERVER_FRAME
-
-			IPrintLnBold("Fire Right -> Wait");
 		}
-		while(self AdsButtonPressed() && !self AttackButtonPressed());
-
-		IPrintLnBold("Fire Right -> Attempt");
-
-		if(!isdefined(self._portal_weapon_fire_state) || self._portal_weapon_fire_state != PORTAL_TYPE_RIGHT)
-			continue;
-
-		IPrintLnBold("Fire Right -> Success");
-
-		self fire_event(&onPlayerFiredPortal_Pre, &onPlayerFiredPortal_Post, PORTAL_FIRED_EVENT_NAME, PORTAL_TYPE_RIGHT);
-
-		WAIT_SERVER_FRAME
 	}
 }
 
